@@ -13,8 +13,8 @@ type TransactionRepository interface {
 	GetOneTransaction(ID string) (models.Transaction, error)
 	CreateTransaction(transaction models.Transaction) (models.Transaction, error)
 	UpdateTransactionStatus(status string, ID string) error //use
+	// UpdateAdminTransaction() error
 
-	//GetEmailTransaction
 }
 
 func RepositoryTransaction(db *gorm.DB) *repository {
@@ -83,3 +83,7 @@ func (r *repository) GetOneTransaction(ID string) (models.Transaction, error) {
 
 	return transaction, err
 }
+
+// func (r *repository) UpdateAdminTransaction() error {
+
+// }
