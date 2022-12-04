@@ -1,12 +1,12 @@
 package main
 
 import (
+	"backend-API/database"
+	"backend-API/pkg/mysql"
+	"backend-API/routes"
 	"fmt"
 	"net/http"
 	"os"
-	"waysbuck-API/database"
-	"waysbuck-API/pkg/mysql"
-	"waysbuck-API/routes"
 
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"

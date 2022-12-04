@@ -1,6 +1,10 @@
 package handlers
 
 import (
+	dto "backend-API/dto/result"
+	transactiondto "backend-API/dto/transaction"
+	"backend-API/models"
+	"backend-API/repositories"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -8,10 +12,6 @@ import (
 	"os"
 	"strconv"
 	"time"
-	dto "waysbuck-API/dto/result"
-	transactiondto "waysbuck-API/dto/transaction"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/golang-jwt/jwt/v4"

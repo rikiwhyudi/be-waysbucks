@@ -1,10 +1,10 @@
 package routes
 
 import (
-	"waysbuck-API/handlers"
-	"waysbuck-API/pkg/middleware"
-	"waysbuck-API/pkg/mysql"
-	"waysbuck-API/repositories"
+	"backend-API/handlers"
+	"backend-API/pkg/middleware"
+	"backend-API/pkg/mysql"
+	"backend-API/repositories"
 
 	"github.com/gorilla/mux"
 )

@@ -1,15 +1,15 @@
 package handlers
 
 import (
+	productdto "backend-API/dto/product"
+	dto "backend-API/dto/result"
+	"backend-API/models"
+	"backend-API/repositories"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
 	"strconv"
-	productdto "waysbuck-API/dto/product"
-	dto "waysbuck-API/dto/result"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"context"
 

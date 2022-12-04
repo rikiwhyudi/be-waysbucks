@@ -1,18 +1,18 @@
 package handlers
 
 import (
+	authdto "backend-API/dto/auth"
+	dto "backend-API/dto/result"
 	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"time"
-	authdto "waysbuck-API/dto/auth"
-	dto "waysbuck-API/dto/result"
 
-	"waysbuck-API/models"
-	"waysbuck-API/pkg/bcrypt"
-	jwtToken "waysbuck-API/pkg/jwt"
-	"waysbuck-API/repositories"
+	"backend-API/models"
+	"backend-API/pkg/bcrypt"
+	jwtToken "backend-API/pkg/jwt"
+	"backend-API/repositories"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/golang-jwt/jwt/v4"

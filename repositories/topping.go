@@ -1,7 +1,7 @@
 package repositories
 
 import (
-	"waysbuck-API/models"
+	"backend-API/models"
 
 	"gorm.io/gorm"
 )

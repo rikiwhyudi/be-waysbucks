@@ -1,13 +1,13 @@
 package handlers
 
 import (
+	cartdto "backend-API/dto/cart"
+	dto "backend-API/dto/result"
+	"backend-API/models"
+	"backend-API/repositories"
 	"encoding/json"
 	"net/http"
 	"strconv"
-	cartdto "waysbuck-API/dto/cart"
-	dto "waysbuck-API/dto/result"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/golang-jwt/jwt/v4"

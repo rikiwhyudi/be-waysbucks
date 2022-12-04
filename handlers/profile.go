@@ -1,13 +1,13 @@
 package handlers
 
 import (
+	profiledto "backend-API/dto/profile"
+	dto "backend-API/dto/result"
+	"backend-API/models"
+	"backend-API/repositories"
 	"encoding/json"
 	"net/http"
 	"strconv"
-	profiledto "waysbuck-API/dto/profile"
-	dto "waysbuck-API/dto/result"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"github.com/gorilla/mux"
 )

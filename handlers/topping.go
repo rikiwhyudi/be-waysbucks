@@ -1,16 +1,16 @@
 package handlers
 
 import (
+	dto "backend-API/dto/result"
+	toppingdto "backend-API/dto/topping"
+	"backend-API/models"
+	"backend-API/repositories"
 	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
 	"strconv"
-	dto "waysbuck-API/dto/result"
-	toppingdto "waysbuck-API/dto/topping"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"github.com/cloudinary/cloudinary-go/v2"
 	"github.com/cloudinary/cloudinary-go/v2/api/uploader"
@@ -21,8 +21,6 @@ import (
 type handlerTopping struct {
 	ToppingRepository repositories.ToppingRepository
 }
-
-// var topping_path_file = "http://localhost:2500/uploads/"
 
 func HandlerTopping(ToppingRepository repositories.ToppingRepository) *handlerTopping {
 	return &handlerTopping{ToppingRepository}

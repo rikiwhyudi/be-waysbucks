@@ -1,9 +1,9 @@
 package database
 
 import (
+	"backend-API/models"
+	"backend-API/pkg/mysql"
 	"fmt"
-	"waysbuck-API/models"
-	"waysbuck-API/pkg/mysql"
 )
 
 // Automatic Migration if Running App

@@ -1,13 +1,13 @@
 package handlers
 
 import (
+	dto "backend-API/dto/result"
+	usersdto "backend-API/dto/users"
+	"backend-API/models"
+	"backend-API/repositories"
 	"encoding/json"
 	"net/http"
 	"strconv"
-	dto "waysbuck-API/dto/result"
-	usersdto "waysbuck-API/dto/users"
-	"waysbuck-API/models"
-	"waysbuck-API/repositories"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/gorilla/mux"

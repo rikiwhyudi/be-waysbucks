@@ -1,12 +1,12 @@
 package middleware
 
 import (
+	dto "backend-API/dto/result"
+	jwtToken "backend-API/pkg/jwt"
 	"context"
 	"encoding/json"
 	"net/http"
 	"strings"
-	dto "waysbuck-API/dto/result"
-	jwtToken "waysbuck-API/pkg/jwt"
 )
 
 type Result struct {
