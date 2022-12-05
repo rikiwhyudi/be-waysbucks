@@ -6,8 +6,6 @@ type CartRequest struct {
 	ToppingID     []int `json:"topping_id" form:"topping_id"`
 	SubAmount     int   `json:"sub_amount" form:"sub_amount"`
 	TransactionID int   `json:"transaction_id"`
-	// Qty       int    `json:"qty"`
-	// Status string `json:"status"`
 }
 
 type UpdateCart struct {
